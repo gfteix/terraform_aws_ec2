@@ -8,7 +8,7 @@ The private instance can access the internet, as it has a NAT Gateway attached t
 
 
 
-![aws_ec2_network_diagram](./aws_ec2_network_diagram.png)
+![aws_ec2_network_diagram](./aws_ec2_network_diagram.jpg)
 
 
 ## Resources
