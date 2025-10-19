@@ -7,6 +7,10 @@ The public instance can access the internet, but it can only be accessed through
 The private instance can access the internet, as it has a NAT Gateway attached to the private subnet. But it can only be accessed through SSH inside the VPC, which means that no one from the public internet can reach the instance.
 
 
+
+![aws_ec2_network_diagram](./aws_ec2_network_diagram.png)
+
+
 ## Resources
 
 - EC2 Instances
