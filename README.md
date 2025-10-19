@@ -45,3 +45,5 @@ The private instance can access the internet, as it has a NAT Gateway attached t
 - Run `terraform apply` to apply all the changes
 
 - ssh into the public instance by running `ssh -i ~/.ssh/my-ec2-key ubuntu@INSTANCE_PUBLIC_IP_ADDRESS`
+
+- Run `terraform destroy` to delete all resources
