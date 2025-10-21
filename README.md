@@ -4,8 +4,7 @@ Provisoning two EC2 instances, one in a public subnet and the other in a private
 
 The public instance can access the internet, but it can only be accessed through SSH, as configured by the security group.
 
-The private instance can access the internet, as it has a NAT Gateway attached to the private subnet. But it can only be accessed through SSH inside the VPC, which means that no one from the public internet can reach the instance.
-
+The private instance can access the internet, as the route tables routes the external access through the NAT Gateway that lives in the public subnet. But the internet can not access the instance, it can only be accessed using SSH inside the VPC.
 
 
 ![aws_ec2_network_diagram](./aws_ec2_network_diagram.jpg)
@@ -47,3 +46,10 @@ The private instance can access the internet, as it has a NAT Gateway attached t
 - ssh into the public instance by running `ssh -i ~/.ssh/my-ec2-key ubuntu@INSTANCE_PUBLIC_IP_ADDRESS`
 
 - Run `terraform destroy` to delete all resources
+
+
+## TODOS
+
+- [ ] Organize terraform code, create modules/folders
+
+- [ ] Add pipeline?
